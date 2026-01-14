@@ -1,0 +1,40 @@
+body {
+    background-color: blue;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-left: 16px;
+}
+#contenedor {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    h1 {
+        margin-bottom: 166px;
+    }
+}
+
+#mensaje {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: none;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}

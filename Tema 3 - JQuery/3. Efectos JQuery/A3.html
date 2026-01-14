@@ -14,41 +14,71 @@
         <h1>Ejercicios del Módulo de DWEC</h1>
     </div>
     <main>
-        <h2><code class="code-AnexosTemas">Anexo 1</code> - Programación básica con JQuery</h2>
+        <h2><code class="code-AnexosTemas">Anexo 3</code> - Efectos con JQuery</h2>
         <div class="contenedor">
             <section class="seccionPrincipal">
                 <div class="anexosYejercicios">
                     <ul>
-                        <li><a href="Ejercicio1.html">Ejercicio 1 - Mostrar contenido de un fichero de texto con $.ajax</a></li>
-                        <li><a href="Ejercicio2.html">Ejercicio 2 - Mostrar y ocultar imágenes con efectos show y hide</a></li>
+                        <li><a href="Ejercicio1.html">Ejercicio 1 - Aplicación de efectos jQuery sobre una imagen</a></li>
+                        <li><a href="Ejercicio2.html">Ejercicio 2 - Mensaje con efecto de fundido</a></li>
+                        <li><a href="Ejercicio3.html">Ejercicio 3 - Movimiento animado de un cubo</a></li>
+                        <li><a href="Ejercicio4.html">Ejercicio 4 - Cambio de color con animate</a></li>
+                        <li><a href="Ejercicio5.html">Ejercicio 5 - Cola de efectos con queue</a></li>
                     </ul>
                 </div> <!--contenidoAnexos-->
+
                 <section>
-                    <h3 class="tituloConLineaDivisoria"><code class="code-AnexosTemas">*</code> - <u>Enunciados de los ejercicios</u> - <code class="code-AnexosTemas">*</code></h3>
+                    <h3 class="tituloConLineaDivisoria">
+                        <code class="code-AnexosTemas">*</code> - <u>Enunciados de los ejercicios</u> -
+                        <code class="code-AnexosTemas">*</code>
+                    </h3>
 
-                    <h4>Ejercicio 1 - Mostrar contenido de un fichero de texto con <code class="code-AnexosTemas">$.ajax</code></h4>
-                    <p>Crea una página que nos muestre el contenido de un fichero de texto utilizando <strong>$.ajax</strong>
-                        al pinchar sobre el botón “Mostrar fichero de texto”.
+                    <h4>Ejercicio 1 - Aplicación de efectos jQuery sobre una imagen</h4>
+                    <p>
+                        Crea una página web que contenga una imagen y varios botones. Mediante dichos botones,
+                        el usuario deberá poder aplicar todos los efectos de jQuery vistos en clase sobre la imagen:
+                        efectos básicos (<strong>show</strong>, <strong>hide</strong>, <strong>toggle</strong>),
+                        efectos de fundido (<strong>fadeIn</strong>, <strong>fadeOut</strong>, <strong>fadeToggle</strong>),
+                        efectos de deslizamiento (<strong>slideUp</strong>, <strong>slideDown</strong>, <strong>slideToggle</strong>)
+                        y el método <strong>animate</strong>.
                     </p>
 
-                    <h4>Ejercicio 2 - Cargar otra página HTML dinámicamente con <code class="code-AnexosTemas">$.load</code></h4>
-                    <p>Crea una página que nos cargue otra página html utilizando el método <strong>$.load</strong> al
-                        pinchar sobre el botón “Carga una página html”.
+                    <h4>Ejercicio 2 - Mensaje con efecto de fundido</h4>
+                    <p>
+                        Diseña una página con un fondo de color azul en la que se muestre, centrado en la pantalla,
+                        un mensaje con el texto “Bienvenidos a esta aplicación”.
+                    </p>
+                    <p>
+                        La página deberá incluir dos botones: <strong>Saludo</strong>, que hará que el mensaje pase de
+                        transparente a opaco mediante un efecto de fundido, y <strong>Despedida</strong>, que realizará
+                        el efecto contrario.
                     </p>
 
-                    <h4>Ejercicio 3 - Leer y mostrar un fichero XML usando <code class="code-AnexosTemas">$.get</code></h4>
-                    <p>Crea una página que nos muestre el contenido de un fichero XML utilizando el método <strong>$.get
-                    </strong> al pinchar sobre el botón “Mostrar fichero XML”.
+                    <h4>Ejercicio 3 - Movimiento animado de un cubo</h4>
+                    <p>
+                        En la pantalla deberá aparecer un cubo que se mueva automáticamente describiendo la trayectoria
+                        de un cuadrado utilizando animaciones con jQuery.
                     </p>
-                    <p>Ver como referencia el siguiente enlace:
-                        <a href="http://www.returngis.net/2011/01/leer-archivos-xml-con-jquery/">
-                            http://www.returngis.net/2011/01/leer-archivos-xml-con-jquery/
-                        </a>
+                    <p>
+                        La página contará con dos botones: <strong>Parar Efecto</strong>, que detendrá todas las animaciones
+                        del cubo, y <strong>Iniciar Efecto</strong>, que reanudará su movimiento.
                     </p>
 
-                    <h4>Ejercicio 4 - Enviar datos a PHP y recibir respuesta con <code class="code-AnexosTemas">$.post</code></h4>
-                    <p>Crea una página que utilizando el método $.post pase uno o dos parámetros a un fichero
-                        php y nos devuelva un resultado.
+                    <h4>Ejercicio 4 - Cambio de color con <code class="code-AnexosTemas">animate</code></h4>
+                    <p>
+                        Utilizando el método <strong>animate</strong> de jQuery, crea un efecto que permita cambiar el color
+                        inicial de todas las etiquetas <strong>h1</strong> del documento al hacer clic sobre ellas.
+                    </p>
+
+                    <h4>Ejercicio 5 - Uso de la cola de efectos con queue</h4>
+                    <p>
+                        Utilizando el método <strong>queue</strong> de jQuery para acceder a la cola de efectos,
+                        aplica sobre una capa (puede reutilizarse el cubo del ejercicio anterior) los siguientes efectos,
+                        en este orden: <strong>animate</strong>, <strong>css</strong> y <strong>animate</strong>.
+                    </p>
+                    <p>
+                        Entre cada efecto se deberá utilizar un <strong>delay</strong> para que la transición entre ellos
+                        sea claramente visible.
                     </p>
                 </section>
             </section>

@@ -3,25 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ejercicio 1</title>
+        <title>Ejercicio 4</title>
         <meta name="description" content="¡Hola! Y bienvenido.">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <link rel="stylesheet" href="../../estiloEjercicios.css">
         <link rel="icon" type="image/png" href="../../img/logoDWEC.png">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
         <!--SIEMPRE ANDARSE CON OJO CON LA VERSIÓN
         Antes: 3.6.4
         Ahora: 1.12.4
         -->
-        <script type="text/javascript" src="js/Ejercicio1.js"></script>
+        <script type="text/javascript" src="js/Ejercicio4.js"></script>
     </head>
     <body>
-        <h2><code>Ejercicio 1</code> - Aplicación de efectos jQuery sobre una imagen.</h2>
-        <div id="buttonsE1jquery" style="width: fit-content;">
-            <button type="button" id="btn1-SHT">Efecto 1 - Mostrar/Ocultar</button>
-            <button type="button" id="btn2-IOT">Efecto 2 - Fundido</button>
-            <button type="button" id="btn3-UDT">Efecto 3 - Deslizamiento</button>
+        <h2><code>Ejercicio 4</code> - Cambio de color con <code>animate</code>.</h2>
+        <button type="button" id="cambiarColor">Cambiar color de los h1</button>
+        <div id="etiquetas-h1" style="color: red;">
+            <h1>Primer h1</h1>
+            <h1>Segundo h1</h1>
+            <h1>Tercer h1</h1>
         </div>
-        <img src="../../img/evil-larry.jpeg" alt="Evil Larry >:)" id="imagenE1">
+        <div id="res"></div>
     </body>
 </html>
