@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Avanzado</title>
+    <meta name="description" content="¡Hola! Y bienvenido.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="icon" type="image/png" href="../../img/logoDWEC.png">
+    <link rel="stylesheet" href="../../estiloEjercicios.css">
+</head>
+<body>
+<div class="titulo">
+    <h1>Ejercicios del Módulo de DWEC</h1>
+</div>
+<main>
+    <h2><code class="code-AnexosTemas">Anexo 1</code> - Programación básica con JQuery</h2>
+    <div class="contenedor">
+        <section class="seccionPrincipal">
+            <div class="anexosYejercicios">
+                <ul>
+                    <li><a href="Ejercicio1.html">Ejercicio 1 - Carga de fichero de texto con AJAX</a></li>
+                    <li><a href="Ejercicio2.html">Ejercicio 2 - Carga de fichero PHP con loader y control de errores</a></li>
+                    <li><a href="Ejercicio3.html">Ejercicio 3 - Carga y ejecución de un fichero JavaScript</a></li>
+                    <li><a href="Ejercicio4.html">Ejercicio 4 - Envío de formulario con $.get y serialize</a></li>
+                    <li><a href="Ejercicio5.html">Ejercicio 5 - Consumo de API REST con getJSON</a></li>
+                </ul>
+            </div> <!--anexosYejercicios-->
+
+            <section>
+                <h3 class="tituloConLineaDivisoria">
+                    <code class="code-AnexosTemas">*</code> - <u>Enunciados de los ejercicios</u> - <code class="code-AnexosTemas">*</code>
+                </h3>
+
+                <h4>Ejercicio 1 - Carga de fichero de texto con AJAX</h4>
+                <p>
+                    Realiza un ejercicio en el que, mediante el método <code class="code-AnexosTemas">$.ajax</code>, se cargue un fichero de texto externo.
+                </p>
+                <ul>
+                    <li>Si la transferencia de la información se realiza correctamente, el contenido del fichero se mostrará dentro de un contenedor de la página.</li>
+                    <li>Si la transferencia no se realiza correctamente, se mostrará un mensaje general de error en pantalla.</li>
+                </ul>
+
+                <h4>Ejercicio 2 - Carga de fichero PHP con loader y control de errores</h4>
+                <p>
+                    Utilizando el método <code class="code-AnexosTemas">$.ajax</code>, carga un fichero PHP que muestre la fecha y hora actual del sistema,
+                    simulando una carga lenta.
+                </p>
+                <ul>
+                    <li>Antes de mostrar la información, deberá aparecer un icono o imagen típica de carga.</li>
+                    <li>Si la transmisión se realiza correctamente, se mostrará la información recibida en pantalla.</li>
+                    <li>Si se produce un error, se deberá mostrar el código de error correspondiente.</li>
+                </ul>
+
+                <h4>Ejercicio 3 - Carga y ejecución de un fichero JavaScript</h4>
+                <p>
+                    Utilizando el método <code class="code-AnexosTemas">$.ajax</code>, carga un fichero JavaScript externo y ejecútalo en el lado del cliente
+                    una vez se haya recibido correctamente.
+                </p>
+
+                <h4>Ejercicio 4 - Envío de formulario con $.get y serialize</h4>
+                <p>
+                    Crea un formulario que contenga los campos <strong>usuario</strong> y <strong>clave</strong>.
+                    Mediante el método <code class="code-AnexosTemas">$.get</code>, envía los datos del formulario a un fichero PHP utilizando
+                    el método <code class="code-AnexosTemas">serialize</code>.
+                </p>
+                <ul>
+                    <li>Si el usuario es <strong>“pepe”</strong> y la clave es <strong>“hola”</strong>, se mostrará el mensaje
+                        <em>“usuario correcto”</em>.
+                    </li>
+                    <li>En cualquier otro caso, se mostrará el mensaje <em>“usuario incorrecto”</em>.</li>
+                </ul>
+
+                <h4>Ejercicio 5 - Consumo de API REST con getJSON</h4>
+                <p>
+                    Utiliza el método <code class="code-AnexosTemas">getJSON</code> para consumir la API REST de países disponibles en la siguiente dirección:
+                    <a href="https://restcountries.eu/">https://restcountries.eu/</a>
+                </p>
+
+                <ul>
+                    <li>Se deberán obtener y mostrar los países pertenecientes a Europa.</li>
+                    <li>Si se produce algún error, se mostrará en pantalla el código de error y el texto descriptivo del error.</li>
+                </ul>
+            </section>
+        </section>
+        <aside class="menuDerecho">
+            <section>
+                <h4>Menú</h4>
+                <h5>Accesos directos a los anexos</h5>
+                <div class="anexosYejerciciosAside">
+                    <ul>
+                        <li><a href="#">Anexo 1 - Introducción a JQuery</a></li>
+                        <li><a href="../2.%20AJAX%20y%20JQuery/A2.html">Anexo 2 - AJAX y JQuery</a></li>
+                        <li><a href="../3.%20Efectos%20JQuery/A3.html">Anexo 3 - Efectos JQuery</a></li>
+                        <li><a href="../4.%20AJAX%20y%20JQuery%20II/A4.html">Anexo 4 - AJAX y JQuery II</a></li>
+                    </ul>
+                </div> <!--contenidoAnexos-->
+            </section>
+            <div class="volver"><a href="../T3.html ">Volver atrás</a></div>
+            <div class="volver"><a href="../../index.html">Volver al índice</a></div>
+        </aside>
+    </div>
+</main>
+<footer>
+    <p>Samuel Aded Santafé - DWEC &copy;</p>
+    <p>Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
