@@ -4,7 +4,7 @@ $(document).ready(function () {
         $('#loader').show();
 
         $.ajax({
-            url: 'archivos-ejercicios/fecha.php',
+            url: 'archivos-eicios/fecha.php',
             method: 'GET',
             success: function (data) {
                 $('#loader').hide();

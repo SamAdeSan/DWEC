@@ -1,6 +1,5 @@
 $(document).ready(function(){
-    $('#formE4').on('submit', function(e){
-        e.preventDefault();
+    $('#formE4').on('click', function(){
         $.get('archivos-ejercicios/validar.php', $(this).serialize(), function(data){
             $('#resultado').text(data);
         })

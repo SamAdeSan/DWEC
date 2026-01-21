@@ -11,4 +11,7 @@ $(document).ready(function () {
             }
         });
     });
+    $('#dejarDeCargar').on('click', function () {
+        $("#res").empty();
+    })
 });
