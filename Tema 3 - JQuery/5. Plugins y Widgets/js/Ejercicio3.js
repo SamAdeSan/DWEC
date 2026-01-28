@@ -6,7 +6,6 @@ $(document).ready(function() {
             tamanoTexto: "18px"
         };
         let opciones = $.extend(opcionesDefecto, opcionesUsuario);
-
         return this.each(function () {
             $(this).css({
                 "background-color": opciones.colorFondo,
@@ -15,12 +14,11 @@ $(document).ready(function() {
             });
         });
     };
-})
-
-$("#aplicarPlugin").click(function () {
-    $("p").miPluginOpciones({
-        colorFondo: "lightblue",
-        colorTexto: "darkblue",
-        tamanoTexto: "20px"
+    $("#aplicarPlugin").click(function () {
+        $("p").miPluginOpciones({
+            colorFondo: "lightblue",
+            colorTexto: "darkblue",
+            tamanoTexto: "20px"
+        });
     });
-})
+});

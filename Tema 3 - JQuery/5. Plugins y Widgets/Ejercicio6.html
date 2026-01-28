@@ -8,14 +8,31 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <link rel="stylesheet" href="../../estiloEjercicios.css">
         <link rel="icon" type="image/png" href="../../img/logoDWEC.png">
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <!--SIEMPRE ANDARSE CON OJO CON LA VERSIÓN
-        Antes: 3.6.4
-        Ahora: 1.12.4
-        -->
+        <!-- CSS jQuery -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
         <script type="text/javascript" src="js/Ejercicio6.js"></script>
     </head>
     <body>
         <h2><code>Ejercicio 6</code> - Página con plugin y widget a elección.</h2>
+        <button id="aplicarPlugin" type="button">Aplicar plugin a los párrafos</button>
+        <button id="dejarDeAplicarPlugin" type="button">Dejar de aplicar plugin a los párrafos</button>
+        <div class="acordeon" style="width: fit-content; height: fit-content;">
+            <h3>Sección A</h3>
+            <div>
+                <p>Párrafo uno</p>
+                <p>Párrafo dos</p>
+                <p>Párrafo tres</p>
+            </div>
+
+            <h3>Sección B</h3>
+            <div>
+                <p>Párrafo cuatro</p>
+                <p>Párrafo cinco</p>
+                <p>Párrafo seis</p>
+            </div>
+        </div>
     </body>
 </html>
