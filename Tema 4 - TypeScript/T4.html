@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 4 - TypeScript</title>
+    <meta name="description" content="¡Hola! Y bienvenido.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="../estiloEjercicios.css">
+    <link rel="icon" type="image/png" href="../img/logoDWEC.png">
+</head>
+<body>
+<div class="titulo">
+    <h1>Ejercicios del Módulo de DWEC</h1>
+</div>
+<main>
+    <h2><code class="code-AnexosTemas">Tema 4</code> - TypeScript</h2>
+    <div class="contenedor">
+        <section class="seccionPrincipal">
+            <h3>Ejercicios del Cuarto Bloque - TypeScript</h3>
+            <div class="anexosYejercicios">
+                <ul>
+                    <li><a href="1.%20Programación%20básica%20con%20JQuery/A1.html">Anexo 1 - Introducción a TypeScript</a></li>
+                </ul>
+            </div> <!--contenidoAnexos-->
+        </section>
+        <aside class="menuDerecho">
+            <section>
+                <h4>Menú</h4>
+                <h5>Accesos directos a los temas</h5>
+                <div class="anexosYejerciciosAside">
+                    <ul>
+                        <li><a href="../Tema 1 - JavaScript (La base de la programacion web)/T1.html">Tema 1 - JavaScript</a></li>
+                        <li><a href="../Tema%202%20-%20AJAX%20(Asynchronous%20JavaScript%20And%20XML)/T2.html">Tema 2 - AJAX</a></li>
+                        <li><a href="../Tema%203%20-%20JQuery/T3.html">Tema 3 - JQuery</a></li>
+                        <li><a href="../Tema%204%20-%20TypeScript/T4.html">Tema 4 - TypeScript</a></li>
+                    </ul>
+                </div> <!--contenidoAnexos-->
+            </section>
+            <div class="volver"><a href="../index.html">Volver</a></div>
+        </aside>
+    </div>
+    <section>
+        <h3 class="tituloConLineaDivisoria">Teoría TypeScript</h3>
+        <h4>¿Qué es <code class="code-AnexosTemas">TypeScript</code>?</h4>
+        <p>
+            Desarrollado por Microsoft, TypeScript es un lenguaje de programación de código abierto que se construye sobre JavaScript.
+            Técnicamente, se define como un <strong>superset</strong> (superconjunto) de JavaScript; esto significa que cualquier código de JavaScript
+            válido es también código de TypeScript válido. Añade una capa de tipado estático que no existe en el JS tradicional.
+            Como dato clave, los navegadores no entienden TypeScript de forma nativa, por lo que el código se "transpila" a JavaScript puro antes de ejecutarse.
+        </p>
+        <p>
+            <strong>TypeScript</strong> es un lenguaje de programación libre y de código abierto creado por Microsoft.
+            Se define como un <strong>superset</strong> de JavaScript, lo que significa que añade:
+        </p>
+        <ul>
+            <li>Tipos estáticos.</li>
+            <li>Objetos basados en clases.</li>
+        </ul>
+        <p>
+            Está diseñado para facilitar el desarrollo de grandes aplicaciones y puede ejecutarse tanto en el lado del cliente como en el servidor (<strong>Node.js</strong>).
+        </p>
+
+        <h4>¿Para qué sirve?</h4>
+        <ul>
+            <li><strong>Evitar errores comunes:</strong> Captura fallos antes de que el código se ejecute (en tiempo de compilación).</li>
+            <li><strong>Facilitar el mantenimiento:</strong> En proyectos grandes, ayuda a entender qué datos fluyen por cada parte de la aplicación.</li>
+            <li><strong>Mejorar el trabajo en equipo:</strong> Al definir reglas claras sobre objetos y funciones, otros desarrolladores saben exactamente qué esperar de tu código.</li>
+            <li><strong>Robustez:</strong> Hace que el desarrollo de software sea mucho más predecible y seguro.</li>
+        </ul>
+
+        <h4>Características clave</h4>
+        <ul>
+            <li><strong>Tipado Estático (Static Typing):</strong> Permite definir el tipo de dato (como <code class="code-AnexosTemas">let edad: number = 25;</code>) para evitar asignaciones incorrectas.</li>
+            <li><strong>Interfaces y Tipos:</strong> Permite definir la "forma" de los objetos, asegurando que contengan las propiedades requeridas.</li>
+            <li><strong>Autocompletado (IntelliSense):</strong> Ofrece sugerencias precisas en editores como VS Code, acelerando la escritura de código.</li>
+            <li><strong>Soporte ES6+:</strong> Permite usar funciones modernas de JavaScript y las traduce a versiones compatibles con entornos antiguos.</li>
+            <li><strong>Programación Orientada a Objetos:</strong> Mejora la implementación de clases, modificadores de acceso (private/public) y genéricos.</li>
+        </ul>
+
+        <h4>¿Por qué aprender TypeScript?</h4>
+        <p>
+            Es el lenguaje base utilizado por <u><strong>Angular</strong></u> (a partir de la versión 2), el framework que estudiaremos próximamente.
+        </p>
+        <p>
+            <strong>Nota:</strong> Aunque usemos TypeScript, el navegador sigue ejecutando JavaScript. Todo el código TypeScript se <strong>transpila</strong> a JavaScript estándar (generalmente ECMAScript 5).
+        </p>
+
+        <h4>Instalación y Configuración</h4>
+        <p>Para comenzar, sigue estos pasos:</p>
+
+        <p>1. Instalar <strong>Node.js</strong>.</p>
+        <blockquote class="code-quote">bash<pre>
+<code>npm install -g typescript</code>
+        </pre></blockquote>
+        <p>2. Instalar el compilador de TypeScript mediante <strong>npm</strong>:</p>
+        <p>Para comprobar la versión instalada:</p>
+        <blockquote class="code-quote">bash<pre>
+<code>tsc -v</code>
+        </pre></blockquote>
+
+        <h4>Cómo trabajar</h4>
+        <p>Una vez creado tu archivo con extensión <code class="code-AnexosTemas">.ts</code>, puedes compilarlo ejecutando:</p>
+        <blockquote class="code-quote">bash<pre>
+<code>tsc nombre-fichero.ts</code>
+        </pre></blockquote>
+
+        <p>
+            <strong>Editor recomendado:</strong> Se aconseja utilizar <strong>Visual Studio Code</strong>, aunque otros editores disponen de plugins para dar soporte a este lenguaje (<strong>Herramientas de JetBrains</strong>).
+        </p>
+
+        <h4>Enlaces de interés</h4>
+        <p>Para más información para aprender TypeScript, dale al siguiente botón.</p>
+        <a href="https://www.tutorialesprogramacionya.com/angularya/index.php?inicio=20">
+            <button type="button">Angular Ya</button>
+        </a>
+    </section>
+</main>
+<footer>
+    <p>Samuel Aded Santafé - DWEC &copy;</p>
+    <p>Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
