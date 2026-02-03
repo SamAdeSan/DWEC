@@ -273,6 +273,11 @@ code {
     box-shadow: 2px 2px 2px #888888;
 }
 
+.code-size {
+    font-size: 8pt;
+    padding: 2px;
+}
+
 .code-quote {
     border-left: 4px solid #3a3a3a;
     background: #1e1e1e;

@@ -45,8 +45,46 @@
                 <p>Define una clase <strong>Alumno</strong> con las propiedades nombre, edad y curso. El programa debe instanciar un objeto con los datos: <strong>Nombre="Pedro López", Edad=18, Curso=1CFSJ</strong> y mostrarlos por pantalla.
                 </p>
 
-                <h4>Ejercicio 5 - Implementación de clases compuestas y <code class="code-AnexosTemas">alert</code></h4>
+                <h4>Ejercicio 5 - Implementación de clases compuestas y <code class="code-AnexosTemas code-width">alert</code></h4>
                 <p>Crea una clase llamada <strong>Curso</strong> que implemente la descripción extendida del curso: "Primer curso de grado superior de DAW". Utilizando la clase Alumno anterior, muestra mediante un <strong>alert</strong> el mensaje formateado con el nombre, edad, código de curso y descripción completa.
+                </p>
+
+<h3 class="tituloConLineaDivisoria"><code class="code-AnexosTemas">*</code> - <u>Instalación y Configuración de TypeScript</u> - <code class="code-AnexosTemas">*</code></h3>
+                <p>Para comenzar, sigue estos pasos:</p>
+
+                <p>1. Instalar <strong>Node.js</strong>.</p>
+                <blockquote class="code-quote">bash<pre>
+<code>npm install -g typescript</code>
+                </pre></blockquote>
+
+                <p>Nos puede dar errores porque a veces apt retiene paquetes rotos de npm, por lo que podemos utilizar estos comandos:</p>
+                <blockquote class="code-quote">bash<pre>
+<code>sudo apt --fix-broken install</code>
+                </pre></blockquote>
+                <blockquote class="code-quote">bash<pre>
+<code>sudo apt install libssl3t64=3.0.13-0ubuntu3 libssl-dev npm</code>
+                </pre></blockquote>
+
+                <p>Esto debería salir así:</p>
+                <img src="../../img/ts1.png" alt="ts1">
+                <img src="../../img/ts2.png" alt="ts2"><hr>
+                <img src="../../img/ts3.png" alt="ts3">
+
+                <p>2. Instalar el compilador de TypeScript mediante <strong>npm</strong>:</p>
+                <p>Para comprobar la versión instalada:</p>
+                <blockquote class="code-quote">bash<pre>
+<code>tsc -v</code>
+                </pre></blockquote>
+                <img src="../../img/ts4.png" alt="ts4">
+
+                <h4>Cómo trabajar</h4>
+                <p>Una vez creado tu archivo con extensión <code class="code-AnexosTemas code-size">.ts</code>, puedes compilarlo ejecutando:</p>
+                <blockquote class="code-quote">bash<pre>
+<code>tsc nombre-fichero.ts</code>
+                </pre></blockquote>
+
+                <p>
+                    <strong>Editor recomendado:</strong> Se aconseja utilizar <strong>Visual Studio Code</strong>, aunque otros editores disponen de plugins para dar soporte a este lenguaje (<strong>Herramientas de JetBrains</strong>).
                 </p>
             </section>
         </section>
@@ -56,7 +94,7 @@
                 <h5>Accesos directos a los anexos</h5>
                 <div class="anexosYejerciciosAside">
                     <ul>
-                        <li><a href="#">Anexo 1 - Introducción a JQuery</a></li>
+                        <li><a href="#">Anexo 1 - Introducción a TypeScript</a></li>
                     </ul>
                 </div> <!--contenidoAnexos-->
             </section>
