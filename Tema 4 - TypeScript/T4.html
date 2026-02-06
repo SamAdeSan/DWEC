@@ -6,7 +6,7 @@
     <title>Tema 4 - TypeScript</title>
     <meta name="description" content="¡Hola! Y bienvenido.">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="stylesheet" href="../estiloEjercicios.css">
+    <link rel="stylesheet" href="../estilos.css">
     <link rel="icon" type="image/png" href="../img/logoDWEC.png">
 </head>
 <body>
@@ -30,7 +30,7 @@
                 <h5>Accesos directos a los temas</h5>
                 <div class="anexosYejerciciosAside">
                     <ul>
-                        <li><a href="../Tema 1 - JavaScript (La base de la programacion web)/T1.html">Tema 1 - TypeScript</a></li>
+                        <li><a href="../Tema 1 - JavaScript (La base de la programacion web)/T1.html">Tema 1 - JavaScript</a></li>
                         <li><a href="../Tema%202%20-%20AJAX%20(Asynchronous%20JavaScript%20And%20XML)/T2.html">Tema 2 - AJAX</a></li>
                         <li><a href="../Tema%203%20-%20JQuery/T3.html">Tema 3 - JQuery</a></li>
                         <li><a href="../Tema%204%20-%20TypeScript/T4.html">Tema 4 - TypeScript</a></li>
@@ -71,7 +71,7 @@
 
         <h4>Características clave</h4>
         <ul>
-            <li><strong>Tipado Estático (Static Typing):</strong> Permite definir el tipo de dato (como <code class="code-AnexosTemas code-size">let edad: number = 25;</code>) para evitar asignaciones incorrectas.</li>
+            <li><strong>Tipado Estático (Static Typing):</strong> Permite definir el tipo de dato (como <code class="code-AnexosTemas">let edad: number = 25;</code>) para evitar asignaciones incorrectas.</li>
             <li><strong>Interfaces y Tipos:</strong> Permite definir la "forma" de los objetos, asegurando que contengan las propiedades requeridas.</li>
             <li><strong>Autocompletado (IntelliSense):</strong> Ofrece sugerencias precisas en editores como VS Code, acelerando la escritura de código.</li>
             <li><strong>Soporte ES6+:</strong> Permite usar funciones modernas de JavaScript y las traduce a versiones compatibles con entornos antiguos.</li>
@@ -93,29 +93,14 @@
         <blockquote class="code-quote">bash<pre>
 <code>npm install -g typescript</code>
         </pre></blockquote>
-
-        <p>Nos puede dar errores porque a veces apt retiene paquetes rotos de npm, por lo que podemos utilizar estos comandos:</p>
-        <blockquote class="code-quote">bash<pre>
-<code>sudo apt --fix-broken install</code>
-        </pre></blockquote>
-        <blockquote class="code-quote">bash<pre>
-<code>sudo apt install libssl3t64=3.0.13-0ubuntu3 libssl-dev npm</code>
-        </pre></blockquote>
-
-        <p>Esto debería salir así:</p>
-        <img src="../img/ts1.png" alt="ts1">
-        <img src="../img/ts2.png" alt="ts2"><hr>
-        <img src="../img/ts3.png" alt="ts3">
-
         <p>2. Instalar el compilador de TypeScript mediante <strong>npm</strong>:</p>
         <p>Para comprobar la versión instalada:</p>
         <blockquote class="code-quote">bash<pre>
 <code>tsc -v</code>
         </pre></blockquote>
-        <img src="../img/ts4.png" alt="ts4">
 
         <h4>Cómo trabajar</h4>
-        <p>Una vez creado tu archivo con extensión <code class="code-AnexosTemas code-size">.ts</code>, puedes compilarlo ejecutando:</p>
+        <p>Una vez creado tu archivo con extensión <code class="code-AnexosTemas">.ts</code>, puedes compilarlo ejecutando:</p>
         <blockquote class="code-quote">bash<pre>
 <code>tsc nombre-fichero.ts</code>
         </pre></blockquote>
