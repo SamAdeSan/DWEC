@@ -20,7 +20,7 @@
             <h3>Ejercicios del Cuarto Bloque - TypeScript</h3>
             <div class="anexosYejercicios">
                 <ul>
-                    <li><a href="1.%20Programación%20básica%20con%20JQuery/A1.html">Anexo 1 - Introducción a TypeScript</a></li>
+                    <li><a href="1.%20Programación%20básica%20con%20TypeScript/A1.html">Anexo 1 - Introducción a TypeScript</a></li>
                 </ul>
             </div> <!--contenidoAnexos-->
         </section>
@@ -86,34 +86,78 @@
             <strong>Nota:</strong> Aunque usemos TypeScript, el navegador sigue ejecutando JavaScript. Todo el código TypeScript se <strong>transpila</strong> a JavaScript estándar (generalmente ECMAScript 5).
         </p>
 
-        <h4>Instalación y Configuración</h4>
-        <p>Para comenzar, sigue estos pasos:</p>
+        <section>
+            <h3 class="tituloConLineaDivisoria">Configuración de Proyecto TypeScript</h3>
+            <p>Para que cada ejercicio funcione de forma autónoma y profesional, seguiremos la estructura de carpetas <strong>src/dist</strong>.</p>
 
-        <p>1. Instalar <strong>Node.js</strong>.</p>
-        <blockquote class="code-quote">bash<pre>
-<code>npm install -g typescript</code>
-        </pre></blockquote>
-        <p>2. Instalar el compilador de TypeScript mediante <strong>npm</strong>:</p>
-        <p>Para comprobar la versión instalada:</p>
-        <blockquote class="code-quote">bash<pre>
-<code>tsc -v</code>
-        </pre></blockquote>
+            <h4>1. Inicializar el ejercicio</h4>
+            <p>Sitúate en la terminal dentro de la carpeta del ejercicio específico (ej. <strong>Ejercicio1</strong>) y ejecuta:</p>
+            <blockquote class="code-quote">bash<pre><code>npm init -y
+npm install typescript --save-dev</code></pre></blockquote>
 
-        <h4>Cómo trabajar</h4>
-        <p>Una vez creado tu archivo con extensión <code class="code-AnexosTemas">.ts</code>, puedes compilarlo ejecutando:</p>
-        <blockquote class="code-quote">bash<pre>
-<code>tsc nombre-fichero.ts</code>
-        </pre></blockquote>
+            <h4>2. Crear la estructura de carpetas</h4>
+            <p>Organiza tu código separando la fuente de la distribución:</p>
+            <ul>
+                <li><strong>src/</strong>: Aquí escribirás tus archivos <code class="code-AnexosTemas">.ts</code>.</li>
+                <li><strong>dist/</strong>: Aquí TypeScript generará automáticamente los archivos <code class="code-AnexosTemas">.js</code>.</li>
+            </ul>
 
-        <p>
-            <strong>Editor recomendado:</strong> Se aconseja utilizar <strong>Visual Studio Code</strong>, aunque otros editores disponen de plugins para dar soporte a este lenguaje (<strong>Herramientas de JetBrains</strong>).
-        </p>
+            <h4>3. Configuración del Compilador (<code class="code-AnexosTemas">tsconfig.json</code>)</h4>
+            <p>Genera el archivo con <code class="code-AnexosTemas">npx tsc --init</code> y asegúrate de que estas opciones estén configuradas así para respetar las carpetas:</p>
+            <blockquote class="code-quote">json<pre><code>
+{
+    <span class="string">"compilerOptions":</span> {
+        <span class="string">"target":</span> <span class="value">"ES6"</span>,
+        <span class="string">"module":</span> <span class="value">"CommonJS"</span>,
+        <span class="string">"moduleResolution":</span> <span class="value">"nodenext"</span>,
+        <span class="string">"strict":</span> <span class="keyword">true</span>,
+        <span class="string">"rootDir":</span> <span class="value">"./src"</span>,
+        <span class="string">"outDir":</span> <span class="value">"./dist"</span>
+        <span class="string">"sourceMap":</span> <span class="keyword">true</span>,
+        <span class="string">"skipLibCheck":</span> <span class="keyword">true</span>,
+    },
+    <span class="string">"include"</span>: [<span class="value">"**/*.ts"</span>],
+    <span class="string">"exclude"</span>: [<span class="value">"node_modules"</span>]
+}</code></pre></blockquote>
 
-        <h4>Enlaces de interés</h4>
-        <p>Para más información para aprender TypeScript, dale al siguiente botón.</p>
-        <a href="https://www.tutorialesprogramacionya.com/angularya/index.php?inicio=20">
-            <button type="button">Angular Ya</button>
-        </a>
+            <h4>4. Integración en el HTML</h4>
+            <p>Tu archivo <code class="code-AnexosTemas">index.html</code> debe estar en la raíz del ejercicio y llamar al archivo generado en <strong>dist</strong>:</p>
+            <blockquote class="code-quote">html<pre><code>
+<span class="tag">&lt;script</span> src<span class="value">="dist/main.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
+            </code></pre></blockquote>
+
+            <h3 class="tituloConLineaDivisoria">Flujo de Trabajo y Automatización</h3>
+
+            <h4>Compilación en Tiempo Real</h4>
+            <p>No compiles a mano. Usa el <strong>modo observador (watch)</strong> para que TypeScript trabaje por ti. Ejecuta esto en la carpeta del ejercicio:</p>
+            <blockquote class="code-quote">bash<pre><code>npx tsc -w</code></pre></blockquote>
+            <p>Cada vez que guardes cambios en <code class="code-AnexosTemas">src/main.ts</code>, el archivo <code class="code-AnexosTemas">dist/main.js</code> se actualizará al instante.</p>
+
+            <h4>Esquema Visual del Ejercicio</h4>
+            <p>Así debe lucir la carpeta de cada ejercicio individual para que todo funcione:</p>
+            <blockquote class="code-quote">plaintext<pre><code>Ejercicio/
+├── node_modules/    (Dependencias)
+├── src/
+│   └── main.ts      <-- Escribes aquí
+├── dist/
+│   └── main.js      <-- Se genera solo (No tocar)
+├── index.html       (Llama a dist/main.js)
+├── package.json
+└── tsconfig.json    (Configura rootDir y outDir)</code></pre></blockquote>
+
+            <div class="note-correct">
+                <strong>Ventaja:</strong> Al separar <code class="code-AnexosTemas">src</code> de <code class="code-AnexosTemas">dist</code>, mantienes tu proyecto limpio. Tu código fuente está protegido y el navegador solo lee la versión optimizada.
+            </div>
+
+            <h3 class="tituloConLineaDivisoria">Documentación Oficial</h3>
+            <p>Para profundizar en las opciones del compilador:</p>
+            <a href="https://www.typescriptlang.org/docs/">
+                <button type="button">Documentación TS Oficial</button>
+            </a>
+            <a href="https://www.w3schools.com/typescript/index.php">
+                <button type="button">Tutorial W3Schools</button>
+            </a>
+        </section>
     </section>
 </main>
 <footer>

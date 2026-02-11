@@ -534,6 +534,29 @@ tbody tr:last-child td {
     border-bottom: none;
 }
 
+/* Notas y Alertas */
+.note-warn {
+    background-color: #ffeba9;
+    color: #785900;
+    border-left: 5px solid #c89600;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 9pt;
+    width: fit-content;
+}
+
+.note-correct {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 5px solid #155724;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 9pt;
+    width: fit-content;
+}
+
 /* Ajuste para móviles */
 @media screen and (max-width: 768px) {
     table {
