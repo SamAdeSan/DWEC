@@ -7,7 +7,7 @@ for (let i: number = 1; i <= 5; i++) {
 
     if (!isNaN(numero)) {
         suma += numero;
-        if (numero > 100) {
+        if (numero >= 100) {
             mayores100++;
         }
     }
